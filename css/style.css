@@ -1,0 +1,71 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+.flex{
+    display: flex;
+}
+
+
+
+/* BODY */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+
+}
+
+ul{
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+li{
+    list-style-type: none;
+    border-bottom: 1px grey solid;
+    padding: 10px;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+.add-todo{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+input{
+    /* margin: 0 auto; */
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    display: block;
+    width: 30%;
+    text-align: left;
+
+}
+
+button{
+    width: 70px;
+    padding: 2px 5px;
+    margin: 10px;
+}
