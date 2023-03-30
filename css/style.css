@@ -51,6 +51,12 @@ li:last-child{
     border-bottom: none;
 }
 
+li span{
+    max-width: 100%;
+    display: block;
+    overflow: auto;
+}
+
 .add-todo{
     flex-direction: column;
     width: 100%;

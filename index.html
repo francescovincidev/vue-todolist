@@ -22,8 +22,8 @@
             </ul>
             <p>Devi aggiungere altro alla lista?</p>
             <div class="add-todo flex">
-                <input type="text" placeholder="Aggiugni un nuovo todo">
-                <button>Aggiungi!</button>
+                <input type="text" placeholder="Aggiugni un nuovo todo" v-model="newTodo">
+                <button @click="addTodo">Aggiungi!</button>
             </div>
 
         </div>

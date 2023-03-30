@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp( {
     data() {
         return {
+            newTodo:"",
             todoArray: [
                 {
                     text:"Lavare i piatti",
@@ -31,4 +32,18 @@ createApp( {
             ]
         };
     },
+    methods:{
+
+        addTodo(){
+            this.newTodo = this.newTodo.trim();
+            if(this.newTodo !== ""){
+                this.todoArray.unshift({
+                    text: this.newTodo,
+                    done: false
+                });
+                this.newTodo="";
+            }
+            
+        }
+    }
 }).mount("#app");
