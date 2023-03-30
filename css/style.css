@@ -10,6 +10,10 @@
     display: flex;
 }
 
+/* utility */
+.done{
+    text-decoration: line-through;
+}
 
 
 /* BODY */
